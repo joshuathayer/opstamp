@@ -12,5 +12,5 @@
  {:frontend {:target :browser
              :modules {:main {:init-fn opstamp.app/init}}
              :output-dir "docs"
-             :release {:output-dir "production/js"}
+             :release {:output-dir "docs/js"}
              }}}
