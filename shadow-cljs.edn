@@ -1,0 +1,16 @@
+;; shadow-cljs configuration
+{:source-paths ["src/dev"
+                "src/main"
+                "src/test"]
+
+ :dependencies [[re-frame "0.11.0-rc1"]]
+
+ :dev-http {8088 "public"}
+
+
+ :builds
+ {:frontend {:target :browser
+             :modules {:main {:init-fn opstamp.app/init}}
+             :output-dir "docs"
+             :release {:output-dir "production/js"}
+             }}}
